@@ -1,0 +1,18 @@
+{
+  "name": "5.1-assessment",
+  "version": "1.0.0",
+  "description": "lorem-ipsum assessment",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lorem-ipsum"
+  ],
+  "author": "Tim Bell",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "lorem-ipsum": "^1.0.4"
+  }
+}
