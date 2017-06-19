@@ -3,7 +3,7 @@ const app = express();
 
 
 const loremIpsum = require('lorem-ipsum');
-const output = loremIpsum({
+var output = loremIpsum({
   'count': 3,
   'units': 'paragraphs',
   'format':'html'
@@ -18,7 +18,11 @@ app.get('/lorem', function(req, res){
 
 
 app.get('/lorem/:count', function(req, res){
-  res.send(output.count);
+  res.send(loremIpsum({
+    'count': req.params.count,
+    'units': 'paragraphs',
+    'format':'html'
+  }));
 });
 
 
